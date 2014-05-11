@@ -135,8 +135,8 @@ then
     echo "-----> Running: godep go install -tags heroku ./..."
     godep go install -tags heroku ./...
 else
-    echo "-----> Running: go get -tags heroku ./..."
-    go get -tags heroku ./...
+    echo "-----> Running: go get"
+    go get
 fi
 
 rm -rf $build/.heroku
